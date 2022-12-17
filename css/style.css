@@ -1,0 +1,401 @@
+
+
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: grey;
+    margin: 15px 0 20px 0;
+}
+
+body {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #FCE5D9;
+    justify-content: space-between;
+    padding: 20px 80px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: black;
+}
+
+.logo {
+    width: 125px;
+}
+
+/* #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rosybrown;
+}
+
+#navbar li a.active::after,
+#navbar li a.hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rosybrown;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+} */
+
+#hero {
+    background-image: url("img.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: rosybrown;
+}
+
+#hero button {
+    background-image: url("pink.png");
+    padding: 14px 80px 14px 65px;
+}
+#product1 {
+    text-align: center;
+    
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #FCE5D9;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+
+}
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15 px;
+    font-weight: 700;
+    color: rosybrown;
+}
+#product1 .pro .cart {
+  
+    height: 20px;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: 250;
+    color: rosybrown;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+   
+    padding-top: 20px;
+}
+.col .follow {
+    display: flex;
+    justify-content: center;
+}
+.btn-nav-left{
+    height: 50px;
+    width: 50px;
+}
+.btn-nav-right{
+    height: 50px;
+    width: 50px;
+
+}
+.botton {
+    display: flex;
+    justify-content: center;
+}
+.slider img {
+    display: none;
+}
+img .ac {
+    display: block;
+    animation: fade 0.8s;
+}
+@keyframes fade {
+    from {opacity: 0;}
+    to {
+    opacity: 1;
+    }
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(246, 243, 243, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+
+
+
+/* new nav */
+
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: #FCE5D9;
+    position: relative;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  label {
+    background-color: #000000;
+  }
+  @media (max-width:600px) {
+    .pro-container{
+        flex-direction: column;
+
+    }
+    .pro{ 
+        width: 100% !important;
+
+    }
+    .Offer { bottom: 50%;
+        left: 50%;
+        position: absolute;
+
+    }
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
